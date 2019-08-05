@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="deals_activity_margEnd">16dp</dimen>
+    <dimen name="txt_margin_large">32dp</dimen>
+    <dimen name="title_large">24sp</dimen>
+    <dimen name="txt_price">16sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="txtsize_large">70sp</dimen>
+    <dimen name="booking_large_txtv">150dp</dimen>
+    <dimen name="ed_width_booking">234dp</dimen>
+    <dimen name="ed_height_booking">43dp</dimen>
+    <dimen name="margin_booking">8dp</dimen>
+    <dimen name="btn_txt_large_booking">30sp</dimen>
+    <dimen name="spiner_width">61dp</dimen>
+    <dimen name="spiner_height">26dp</dimen>
+    <dimen name="tv_booking_width">146dp</dimen>
+    <dimen name="tv_booking_height">29dp</dimen>
+    <dimen name="btn_booking">279dp</dimen>
+    <dimen name="btn_height">54dp</dimen>
+    <dimen name="margin_twenty_globe">20dp</dimen>
+    <dimen name="spinner_fnt_size">12sp</dimen>
+    <dimen name="margin_start_88">88dp</dimen>
+    <dimen name="four_margin">4dp</dimen>
+    <dimen name="image_cardview">130dp</dimen>
+    <dimen name="globe_">8dp</dimen>
+    <dimen name="cardview_width">140dp</dimen>
+    <dimen name="card_layout_height">130dp</dimen>
+    <dimen name="global_18_demenxion">18sp</dimen>
+    <dimen name="global_4_dimenx">4dp</dimen>
+    <dimen name="gloal_eigth">8dp</dimen>
+    <dimen name="layouth_height_rows">131dp</dimen>
+    <dimen name="btn_saveTour">150dp</dimen>
+    <dimen name="btn_save_tour">47dp</dimen>
+    <dimen name="margin_activty">32dp</dimen>
+    <dimen name="btn_width">150dp</dimen>
+    <dimen name="btn_weight">47dp</dimen>
+    <dimen name="price_dim_width">100dp</dimen>
+    <dimen name="price_margintop">20dp</dimen>
+
+</resources>

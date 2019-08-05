@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/booking_large_txtv"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/booking"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txtsize_large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/firstname_tv"
+        android:layout_width="@dimen/ed_width_booking"
+        android:layout_height="@dimen/ed_height_booking"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/margin_twenty_globe"
+        android:layout_marginEnd="@dimen/margin_booking"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/surname_tv"
+        android:layout_width="@dimen/ed_width_booking"
+        android:layout_height="@dimen/ed_height_booking"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/margin_booking"
+        android:layout_marginEnd="@dimen/margin_booking"
+        android:hint="Surname"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname_tv" />
+
+    <EditText
+        android:id="@+id/nationality_user"
+        android:layout_width="@dimen/ed_width_booking"
+        android:layout_height="@dimen/ed_height_booking"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/margin_booking"
+        android:layout_marginEnd="@dimen/margin_booking"
+        android:hint="Nationality"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname_tv" />
+
+    <Spinner
+        android:id="@+id/num_travelers_spinner"
+        android:layout_width="@dimen/spiner_width"
+        android:layout_height="@dimen/spiner_height"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:layout_marginEnd="@dimen/deals_activity_margEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/email_user">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/tv_booking_width"
+        android:layout_height="@dimen/tv_booking_height"
+        android:layout_marginStart="@dimen/margin_start_88"
+        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:gravity="center"
+        android:text="No. of travelers"
+        android:textSize="@dimen/spinner_fnt_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_user" />
+
+    <TextView
+        android:id="@+id/spec_depature"
+        android:layout_width="@dimen/tv_booking_width"
+        android:layout_height="@dimen/tv_booking_height"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:gravity="center"
+        android:text="Depature loacation"
+        android:textSize="@dimen/spinner_fnt_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/email_user"
+        android:layout_width="@dimen/ed_width_booking"
+        android:layout_height="@dimen/ed_height_booking"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/margin_booking"
+        android:layout_marginEnd="@dimen/margin_booking"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nationality_user" />
+
+    <Spinner
+        android:id="@+id/depature_loc_spinner"
+        android:layout_width="@dimen/spiner_width"
+        android:layout_height="@dimen/spiner_height"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:layout_marginEnd="@dimen/deals_activity_margEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/spec_depature"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="@dimen/btn_booking"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/margin_booking"
+        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:layout_marginEnd="@dimen/margin_booking"
+        android:background="@drawable/round_btn"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_txt_large_booking"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spec_depature" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

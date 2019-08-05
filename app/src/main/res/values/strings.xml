@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">TravelMonkey</string>
+    <string name="save_item_menu">save</string>
+    <string name="delete_deal">Delete Tour</string>
+    <string name="error_message_no_internet">No Internet</string>
+    <string name="check_internet">Please check your internet connection</string>
+    <string name="user_confirmation_ok">OK</string>
+
+    <string name="selectTravelers1">1 - 3</string>
+    <string name="selectTravelers2">4 - 6</string>
+    <string name="selectTravelers3">Group</string>
+    <string name="selectTravelers4">Not Sure?</string>
+
+    <string name="departureLocation1">Accra</string>
+    <string name="departureLocation2">Togo</string>
+    <string name="departureLocation3">Lome</string>
+    <string name="departureLocation4">Nigeria</string>
+    <string name="image_load_success">Image Loaded successfully</string>
+    <string name="saveDeal_warning">Please save the deal before deleting</string>
+    <string name="tour_saved">Tour Saved!</string>
+    <string name="booking">BOOKING</string>
+    <string name="melbourne_ballon_flight_at_sunrise">Melbourne Ballon Flight at Sunrise</string>
+    <string name="doha_madani_shamar_walters_enjpy_the_moments_and_and_fine_moth_watering_deals">Doha Madani, Shamar Walters, enjpy the moments and and fine moth watering deals</string>
+    <string name="from_1_900">FROM $1,900</string>
+    <string name="view">VIEW</string>
+    <string name="great_ocean_road_small_group_ecotour_from_melbourne">Great Ocean Road Small Group Ecotour from Melbourne</string>
+    <string name="price">Price</string>
+    <string name="overview">Overview</string>
+    <string name="book_now">BOOK NOW</string>
+
+
+    <string-array
+        name="travelersOptions">
+        <item>@string/selectTravelers1</item>
+        <item>@string/selectTravelers2</item>
+        <item>@string/selectTravelers3</item>
+        <item>@string/selectTravelers4</item>
+    </string-array>
+
+    <string-array
+        name="departureOptions">
+        <item>@string/departureLocation1</item>
+        <item>@string/departureLocation2</item>
+        <item>@string/departureLocation3</item>
+        <item>@string/departureLocation4</item>
+    </string-array>
+    
+
+
+</resources>
