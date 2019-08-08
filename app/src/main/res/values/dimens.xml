@@ -7,7 +7,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="txtsize_large">70sp</dimen>
-    <dimen name="booking_large_txtv">150dp</dimen>
+    <dimen name="booking_large_txtv">100dp</dimen>
     <dimen name="ed_width_booking">234dp</dimen>
     <dimen name="ed_height_booking">43dp</dimen>
     <dimen name="margin_booking">8dp</dimen>

@@ -2,10 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/save_menu"
+        android:icon="@drawable/ic_save_action"
         android:title="@string/save_item_menu"
-        app:showAsAction="always"></item>
+        app:showAsAction="ifRoom"></item>
 
     <item android:id="@+id/delete_menu"
         android:title="@string/delete_deal"
-        app:showAsAction="never"></item>
+        android:icon="@drawable/ic_delete_forever_action"
+        app:showAsAction="always"></item>
 </menu>

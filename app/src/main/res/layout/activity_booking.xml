@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingActivity">
+    tools:context=".views.BookingActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -28,7 +28,7 @@
         android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/margin_twenty_globe"
         android:layout_marginEnd="@dimen/margin_booking"
-        android:hint="First Name"
+        android:hint="@string/first_name"
         android:inputType="textPersonName"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,9 +43,9 @@
         android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/margin_booking"
         android:layout_marginEnd="@dimen/margin_booking"
-        android:hint="Surname"
-        android:textStyle="bold"
+        android:hint="@string/surname"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,9 +58,9 @@
         android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/margin_booking"
         android:layout_marginEnd="@dimen/margin_booking"
-        android:hint="Nationality"
-        android:textStyle="bold"
+        android:hint="@string/nationality"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,12 +70,8 @@
         android:id="@+id/num_travelers_spinner"
         android:layout_width="@dimen/spiner_width"
         android:layout_height="@dimen/spiner_height"
-        android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/deals_activity_margEnd"
-        android:layout_marginEnd="@dimen/deals_activity_margEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/email_user"
         app:layout_constraintTop_toBottomOf="@+id/email_user">
 
     </Spinner>
@@ -84,26 +80,26 @@
         android:id="@+id/textView"
         android:layout_width="@dimen/tv_booking_width"
         android:layout_height="@dimen/tv_booking_height"
-        android:layout_marginStart="@dimen/margin_start_88"
         android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="No. of travelers"
+        android:text="@string/no_of_travelers"
         android:textSize="@dimen/spinner_fnt_size"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/spec_depature"
+        app:layout_constraintStart_toStartOf="@+id/email_user"
         app:layout_constraintTop_toBottomOf="@+id/email_user" />
 
     <TextView
         android:id="@+id/spec_depature"
         android:layout_width="@dimen/tv_booking_width"
         android:layout_height="@dimen/tv_booking_height"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="@dimen/deals_activity_margEnd"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Depature loacation"
+        android:text="@string/depature_location"
         android:textSize="@dimen/spinner_fnt_size"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
@@ -113,7 +109,7 @@
         android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/margin_booking"
         android:layout_marginEnd="@dimen/margin_booking"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,12 +122,11 @@
         android:layout_width="@dimen/spiner_width"
         android:layout_height="@dimen/spiner_height"
         android:layout_marginStart="@dimen/margin_booking"
-        android:layout_marginTop="@dimen/deals_activity_margEnd"
-        android:layout_marginEnd="@dimen/deals_activity_margEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/num_travelers_spinner"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/spec_depature"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/num_travelers_spinner" />
 
     <Button
         android:id="@+id/submit_btn"
@@ -140,16 +135,16 @@
         android:layout_marginStart="@dimen/margin_booking"
         android:layout_marginTop="@dimen/deals_activity_margEnd"
         android:layout_marginEnd="@dimen/margin_booking"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/round_btn"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@android:color/white"
         android:textSize="@dimen/btn_txt_large_booking"
-        android:textStyle=""
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spec_depature" />
-
+        app:layout_constraintTop_toBottomOf="@+id/spec_depature"
+        app:layout_constraintVertical_bias="0.144" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

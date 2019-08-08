@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -12,20 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookingActivity"
-            android:configChanges="orientation|screenSize"/>
-        <activity android:name=".TourDescriptionActivity"
+        <activity android:name=".views.BookingActivity" />
+        <activity android:name=".views.TourDescriptionActivity"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName=".ListActivity" />
-        <activity android:name=".ListActivity"
-            android:configChanges="orientation|screenSize">
+            android:parentActivityName=".views.ListActivity" />
+        <activity android:name=".views.ListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TourActivity" />
+        <activity android:name=".views.TourActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

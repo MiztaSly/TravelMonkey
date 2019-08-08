@@ -24,9 +24,38 @@
     <string name="from_1_900">FROM $1,900</string>
     <string name="view">VIEW</string>
     <string name="great_ocean_road_small_group_ecotour_from_melbourne">Great Ocean Road Small Group Ecotour from Melbourne</string>
-    <string name="price">Price</string>
     <string name="overview">Overview</string>
     <string name="book_now">BOOK NOW</string>
+    <string name="save_tour">SAVE TOUR</string>
+    <string name="image_loaded">Image Loaded successfully</string>
+    <string name="deal_deleted">Deal Deleted</string>
+    <string name="content_descrip_tour">Tour picture</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="nationality">Nationality</string>
+    <string name="no_of_travelers">No. of travelers</string>
+    <string name="depature_location">Depature location</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="add_new_tour">ADD NEW TOUR</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="title">Title</string>
+    <string name="selected_tour_image">selected tour image</string>
+    <string name="select_image_btn">SELECT IMAGE</string>
+    <string name="tour_booking">Tour Booking</string>
+    <string name="call_us">Call Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="profile">Home</string>
+    <string name="communicate">Communicate</string>
+    <string name="travel_monkey">Travel Monkey</string>
+    <string name="tmonkey_email">ultrasoft@gmail.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="travel_mon_download_text">Travel Monkey is Cool, download it!</string>
+    <string name="my_email">ultrasoft101@gmail.com</string>
+    <string name="send_email">Send email...</string>
 
 
     <string-array

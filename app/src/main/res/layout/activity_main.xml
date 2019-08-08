@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TourActivity">
+    tools:context=".views.TourActivity">
 
 
     <EditText
@@ -14,7 +14,10 @@
         android:layout_marginStart="@dimen/deals_activity_margEnd"
         android:layout_marginTop="@dimen/txt_margin_large"
         android:layout_marginEnd="@dimen/deals_activity_margEnd"
-        android:hint="Title"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/title"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,67 +27,69 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/deals_activity_margEnd"
-        android:layout_marginTop="@dimen/deals_activity_margEnd"
         android:layout_marginEnd="@dimen/deals_activity_margEnd"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/price"
         android:inputType="text"
-        android:hint="Price"
+        app:layout_constraintBottom_toTopOf="@+id/txt_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txt_description"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginStart="@dimen/deals_activity_margEnd"
-        android:layout_marginTop="@dimen/deals_activity_margEnd"
         android:layout_marginEnd="@dimen/deals_activity_margEnd"
-        android:hint="Description"
+        android:layout_marginBottom="28dp"
+        android:hint="@string/description"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_price" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_image"
         android:layout_width="@dimen/btn_width"
         android:layout_height="@dimen/btn_weight"
-        android:layout_marginStart="@dimen/margin_booking"
-        android:layout_marginTop="@dimen/margin_booking"
-        android:layout_marginEnd="@dimen/margin_booking"
-        android:textColor="@android:color/white"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/round_btn"
-        android:layout_marginBottom="@dimen/margin_booking"
-        android:text="SELECT IMAGE"
+        android:text="@string/select_image_btn"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_saveTour"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="401dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/selected_tour_image"
+        app:layout_constraintBottom_toTopOf="@+id/btn_saveTour"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.331"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_description" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_saveTour"
         android:layout_width="@dimen/btn_saveTour"
         android:layout_height="@dimen/btn_save_tour"
-        android:layout_marginTop="@dimen/margin_booking"
-        android:layout_marginEnd="@dimen/margin_activty"
-        android:layout_marginBottom="@dimen/margin_booking"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/round_btn"
-        android:text="SAVE TOUR"
+        android:text="@string/save_tour"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintStart_toEndOf="@+id/btn_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

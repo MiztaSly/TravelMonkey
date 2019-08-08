@@ -10,28 +10,28 @@
     app:cardElevation="@dimen/four_margin">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
         android:padding="@dimen/four_margin">
 
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/cardview_width"
-            app:cardCornerRadius="@dimen/globe_"
+            android:layout_height="@dimen/card_layout_height"
             android:elevation="10dp"
-            android:layout_height="@dimen/card_layout_height">
+            app:cardCornerRadius="@dimen/globe_">
 
 
             <ImageView
-                android:layout_marginTop="@dimen/globe_"
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/image_cardview"
+                android:layout_marginTop="@dimen/globe_"
+                android:contentDescription="@string/content_descrip_tour"
                 android:scaleType="centerCrop" />
 
         </androidx.cardview.widget.CardView>
-
 
 
         <LinearLayout
@@ -46,9 +46,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/melbourne_ballon_flight_at_sunrise"
+                android:textColor="@android:color/widget_edittext_dark"
                 android:textSize="@dimen/global_18_demenxion"
-                android:textStyle="bold"
-                android:textColor="@android:color/widget_edittext_dark" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_description"
@@ -57,45 +57,39 @@
                 android:layout_marginTop="5dp"
                 android:maxLines="2"
                 android:text="@string/doha_madani_shamar_walters_enjpy_the_moments_and_and_fine_moth_watering_deals"
-                android:textSize="12sp"
-                />
+                android:textSize="12sp" />
 
-            <FrameLayout
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/from_1_900"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_price" />
 
-                    <TextView
-                        android:id="@+id/tv_price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-
-                        android:text="@string/from_1_900"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/txt_price" />
-
-                    <TextView
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:layout_marginStart="50dp"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_toEndOf="@+id/tv_price"
-                        android:background="@drawable/round_btn"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/view"
-                        android:textColor="@android:color/white" />
-                </RelativeLayout>
-
-            </FrameLayout>
+                <TextView
+                    android:layout_width="87dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_toEndOf="@+id/tv_price"
+                    android:background="@drawable/round_btn"
+                    android:gravity="center"
+                    android:text="@string/view"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
 
         </LinearLayout>
-
 
 
     </LinearLayout>
